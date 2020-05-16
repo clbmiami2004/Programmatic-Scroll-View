@@ -61,11 +61,11 @@
 				174FBE8A246EF7CC001BB08B /* AppDelegate.swift */,
 				174FBE8C246EF7CC001BB08B /* SceneDelegate.swift */,
 				174FBE8E246EF7CC001BB08B /* ViewController.swift */,
+				17AEF5B9246F00690097E7C3 /* PaddedTextField.swift */,
 				174FBE90246EF7CC001BB08B /* Main.storyboard */,
 				174FBE93246EF7CE001BB08B /* Assets.xcassets */,
 				174FBE95246EF7CE001BB08B /* LaunchScreen.storyboard */,
 				174FBE98246EF7CE001BB08B /* Info.plist */,
-				17AEF5B9246F00690097E7C3 /* PaddedTextField.swift */,
 			);
 			path = "Programmatic Scrol View";
 			sourceTree = "<group>";

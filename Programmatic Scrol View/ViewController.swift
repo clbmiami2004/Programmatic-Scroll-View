@@ -21,10 +21,12 @@ class ViewController: UIViewController {
         //scrollView.backgroundColor = .cyan
         scrollView.alwaysBounceVertical = true
         scrollView.keyboardDismissMode = .interactive
+        scrollView.delaysContentTouches = false
         scrollView.contentInset = UIEdgeInsets(top: imageHeight, left: 0, bottom: 0, right: 0)
         return scrollView
     }()
     
+    //Here we can change the stackView color by uncommenting the backgroundColor line.
     lazy var contentView: UIView = {
         let contentView = UIView()
         contentView.translatesAutoresizingMaskIntoConstraints = false
@@ -45,10 +47,12 @@ class ViewController: UIViewController {
             passwordTextField,
             button,
        ])
+        stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.alignment = .fill
         stackView.spacing = 8
         //CReate padding variable
+        stackView.isLayoutMarginsRelativeArrangement = true
         stackView.directionalLayoutMargins = .init(top: 20, leading: 20, bottom: 20, trailing: 20)
         
         return stackView
@@ -71,7 +75,7 @@ class ViewController: UIViewController {
     
     lazy var button: UIButton = {
         let button = UIButton(type: .system)
-        button.setBackgroundImage((UIImage(named: "blue-button")), for: .normal)
+        button.setBackgroundImage(UIImage(named: "blue-button"), for: .normal)
         button.setTitle("Log in", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 24)
@@ -81,6 +85,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         addScrollView()
         addImageView()

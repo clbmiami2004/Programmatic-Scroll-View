@@ -14,6 +14,7 @@ class PaddedTextField: UITextField {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        backgroundColor = .white
         layer.borderWidth = 1
         layer.cornerRadius = 4
         layer.borderColor = UIColor.lightGray.cgColor
